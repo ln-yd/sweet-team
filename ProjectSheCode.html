@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dessert Atelier🍨</title>
+    <style>
+      .final-project {
+        background-image: linear-gradient(
+          to bottom,
+          hsla(0, 53%, 90%, 0.836) 0%,
+          rgba(255, 255, 255, 0.425) 100%
+        );
+        margin: 0px 150px 0px 150px;
+        border-radius: 2%;
+      }
+      body {
+        background-image: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-size: cover;
+        background-color: azure;
+      }
+
+      h1 {
+        text-align: center;
+        font-family: serif;
+        font-style: oblique;
+        font-weight: lighter;
+        font-size: 100px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: rgb(255, 255, 255);
+        text-shadow: rgba(0, 0, 0, 0.199) 1px 0 5px;
+        opacity: 0.95;
+      }
+
+      h2 {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: serif;
+        font-weight: lighter;
+        margin-top: 0;
+        margin-bottom: 30px;
+        border-radius: 50%;
+        text-shadow: rgba(0, 0, 0, 0.226) 1px 0 5px;
+        opacity: 0.9;
+      }
+
+      img {
+        border-radius: 50%;
+        display: block;
+        height: 400px;
+        width: 400px;
+        margin: 0 auto;
+        opacity: 0.8;
+        border: 6px dotted #ffffff;
+      }
+
+      h4 {
+        text-align: center;
+        font-family: "Parisienne", cursive;
+        color: white;
+        font-size: 30px;
+        text-shadow: rgba(0, 0, 0, 0.226) 1px 0 5px;
+        margin-top: 35px;
+        margin-bottom: 0;
+      }
+
+      p {
+        font-family: serif;
+        line-height: 1.5;
+        font-size: 25px;
+        border: 2px dotted #ffffff;
+        padding: 30px 60px;
+        border-radius: 3%;
+        color: rgba(109, 79, 79, 0.822);
+        font-weight: lighter;
+        margin: 0 auto;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rgba(88, 45, 42, 0.411);
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        font-weight: lighter;
+        font-size: larger;
+        font-family: serif;
+        border: none;
+        transition: all 150ms ease-in-out;
+        box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+        padding: 7px;
+      }
+      h5 {
+        font-weight: lighter;
+        color:rgb(148, 101, 202);
+        text-shadow: black;
+        font-family: serif
+      }
+
+
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .learn-more {
+        display: block;
+        margin-top: 20px;
+        text-decoration: none;
+        color: rgb(226, 146, 146);
+        text-align: center;
+        font-family: sans-serif;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+        color: rgb(157, 135, 235);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="final-project">
+      <h1>Dessert Atelier</h1>
+      <h2>s w e e t ❤ d r e a m s</h2>
+      <img
+        src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/92021843_541863716469485_1043160114959220736_o.jpg?_nc_cat=102&_nc_sid=9267fe&_nc_ohc=J_Twi41AEi4AX_hR5q5&_nc_ht=scontent-sea1-1.xx&oh=aac09b0429abff1711bad26c5528d36d&oe=5ED98857"
+        alt="Chocolate mousse from FogRose"
+        width="500px"
+      />
+      <h4>Love at first sight</h4>
+      <p>
+        A <em> local</em> hidden gem you keep a secret; a place of tender
+        moments, gentle reflection, and great imagination. Our Atelier offers
+        beautiful and delicious culinary creations to inspire curiosity and
+        ignite wonder at the conjunction points of urban life. Our philosophy is
+        simple: follow your bliss. We aim to craft, with great sensitivity, what
+        inspires and comforts. We are grateful to be the first dessert-forward
+        restaurant in Bellevue with a craft cocktail bar and liquid nitrogen ice
+        cream. Come to our intimate creative space to experience visually
+        stunning foods and beverages, and take a moment to be joyful and
+        present.<br /><br />
+        <a href="https://www.fogrose.com/" target="_blank" class="learn-more">
+          ❤This way to decadent desserts❤ <br /><br /><br /></a>
+          
+          
+          <button class="sample">
+            Would you like a sample?
+          </button>
+        </a>
+        <br />
+      </p>
+      <h5>
+      This page was built by
+      <a href="https://www.instagram.com/_lnyd_/" target="_blank">
+        LNYD
+      </a></h5>
+      
+      
+</div>
+<script>
+  function sampbutt() {
+    let name = prompt("What is your name?");
+    let email = prompt("That is a lovely name, " + name + ". And what is your email address?");
+    alert(
+      "Thank you, " + name + ". Your sample will be ready in 4 years 22 days and 8 hours. An email will be sent when your item is ready. Thank you! 🍨" 
+    );
+  }
+
+  let sample = document.querySelector(".sample");
+  sample.addEventListener("click", sampbutt);
+      </script>
+    </div>
+  </body>
+</html>
